@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "cube-assistant",
+  "version": "${version}",
+  "name": "Cube-Assistant",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/administrator/Cube-Assistant"
+  },
+  "license": "MIT",
+  "icon": "assets/cube-assistant/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cn.crtlprototypestudios.cubeassistant.client.Cube_AssistantClient"
+    ],
+    "main": [
+      "cn.crtlprototypestudios.cubeassistant.Cube_Assistant"
+    ]
+  },
+  "mixins": [
+    "cube-assistant.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
